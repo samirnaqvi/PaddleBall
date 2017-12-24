@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+<RelativeLayout 
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent">
+		"
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onStart"
+        android:text="Start" />
+
+    <SeekBar
+        android:id="@+id/speedBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/button1"
+        android:minWidth="150dp"
+        android:max="40"
+        android:progress="20" />
+    
+    <CheckBox
+        android:id="@+id/twoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speedBar"
+        android:layout_toRightOf="@+id/button1"
+        android:background="#646464"
+        android:text="Two-Player" />
+
+</RelativeLayout>
+    <com.example.paddleball.AnimatedView
+                android:id="@+id/anim_view"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"/>
+</LinearLayout>
